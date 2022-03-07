@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quieres ser mi novia?</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".p1").hover(function () {
+          arriba = Math.random() * (400 - 1) + 1;
+          abajo = Math.random() * (609 - 1) + 1;
+          $(this).css("top", arriba);
+          $(this).css("left", abajo);
+        });
+      });
+      function dijoSi() {
+        Swal.fire({
+          title: "👀👀",
+          text: "lo sabía. Feliz primer día de novios :3, cx",
+          imageUrl:
+            "data:image/jpeg;base64,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",
+          imageWidth: 400,
+          imageHeight: 200,
+          imageAlt: "Enamorado",
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <body>
+      <div class="contenedor">
+        <div class="titulo">
+          <h1>¿Quieres ser mi novia?</h1>
+        </div>
+        <div class="opciones">
+          <p class="p1">No</p>
+          <p onclick="dijoSi()" class="p2">Si</p>
+        </div>
+      </div>
+    </body>
+  </body>
+</html>
